@@ -1,5 +1,3 @@
--- Генерация таблиц и тестовых данных
-
 CREATE TABLE dbo.Category
 (
     [Id]    INT PRIMARY KEY,
@@ -22,8 +20,8 @@ CREATE TABLE dbo.ProductCategory
 );
 
 INSERT INTO dbo.Category([Id], [Name])
-VALUES (1, 'Кроссовки'), (2, 'Пиротехника');
+VALUES (1, 'Sneakers'), (2, 'Pyrotechnics');
 INSERT INTO dbo.Product([Id], [Name])
-VALUES (1, 'PUMA ALL-STARS'), (2, 'Корсар 1');
+VALUES (1, 'PUMA ALL-STARS'), (2, 'Corsair 1');
 INSERT INTO dbo.ProductCategory([ProductId], [CategoryId])
 VALUES (1, 1), (2, 2);

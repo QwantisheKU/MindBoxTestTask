@@ -1,6 +1,4 @@
--- Запрос названий продуктов и категорий
-
-SELECT p.[Name] AS "Имя продукта", c.[Name] AS "Имя категории"
+SELECT p.[Name] AS "Product Name", c.[Name] AS "Category Name"
 FROM dbo.Product AS p
 LEFT JOIN dbo.ProductCategory pc ON pc.[ProductId] = p.[Id]
 LEFT JOIN dbo.Category c ON pc.[CategoryId] = c.[Id]
